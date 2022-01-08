@@ -1,0 +1,6 @@
+.grid {
+    @include respond-to('md') {
+        display: grid;
+        grid-template-columns: $nav_width $main_width;
+    }
+}

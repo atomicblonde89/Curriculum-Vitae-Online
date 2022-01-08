@@ -1,0 +1,52 @@
+.main {
+    width: 80%;
+    margin: 20% auto;
+}
+
+.about-me {
+    margin-bottom: 20%;
+
+    &__title {
+        &-xl {
+            font-size: 2.5rem
+        }
+
+        h3 {
+            font-size: 0.9rem;
+        }
+    }
+
+    &__summary,
+    &__social {
+        margin-top: 8%;
+    }
+
+    &__social a {
+        margin-right: 2%;
+        color: $bluemarine;
+        
+    }
+}
+
+.experience,
+.education,
+.skil,
+.contact {
+    padding-top: 5%;
+    padding-bottom: 10%;
+    border-top: 1px solid $bluemarine;
+
+    &__item {
+        &__title {
+            margin-top: 5%;
+            margin-bottom: 5%;
+            position: relative;
+
+            &-right {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+        }
+    }
+}

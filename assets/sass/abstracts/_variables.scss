@@ -1,0 +1,22 @@
+$greenwater: #7CEA9C;
+$bluemarine: #2d3047;
+$black: #071013;
+$white: #ffffff;
+$color_hover: #9EADBD;
+
+
+$lato:'Lato', sans-serif;
+
+$bold: 900;
+$bolder: 700;
+$regular: 400;
+$light: 300;
+
+$nav_width: 25%;
+$main_width: 100% - $nav_width;
+
+$breakpoints: ('sm': (min-width: 576px),
+'md': (min-width: 768px),
+'lg': (min-width: 992px),
+'xl': (min-width: 1200px),
+);

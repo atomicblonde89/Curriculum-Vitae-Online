@@ -1,0 +1,71 @@
+.nav {
+    background-color: $greenwater;
+    position: relative;
+
+    &__container {
+        @include respond-to('md') {
+            width: $nav_width;
+            text-align: center;
+            position: fixed;
+            top: 30%;
+        }
+    }
+
+    &__image {
+        border-radius: 50%;
+    }
+
+    &__btn {
+        position: absolute;
+        right: 0;
+        top: 20%;
+
+        @include respond-to('md') {
+            display: none;
+        }
+    }
+
+    &__menu {
+        text-transform: uppercase;
+        max-height: 0;
+        display: none;
+
+        @include respond-to('md') {
+            max-height: 100%;
+            display: block;
+        }
+
+
+        &__item {
+            margin-top: 5%;
+            margin-bottom: 5%;
+
+            a {
+                color: $bluemarine;
+                font-weight: $bolder;
+
+            }
+
+        }
+    }
+}
+
+nav a:hover{
+    color: $white;
+}
+
+#menu {
+    display: none;
+
+    &:checked~.nav__menu {
+        display: block;
+        max-height: 100%;
+    }
+}
+
+//QUERIES
+@media only screen and(max-width: 992px) {
+        nav img{
+            margin: 1.5rem 2rem;
+        }
+} 
